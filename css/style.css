@@ -1,0 +1,249 @@
+/*
+  If you get stuck, feel free to watch the follow-up videos where I'll show you one solution
+*/
+
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	background-color: #f5f5b8;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.feat-img {
+	max-width: 100%;
+	padding: 5px;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+  margin: 0;
+}
+
+.name a {
+	color: #f2ad78;
+}
+
+.main-nav {
+  margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #f5f5b8;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #ff5ec4;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+	background: #172713;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 10;
+}
+
+.banner,
+.main-footer {
+  text-align: center;
+}
+
+.banner {
+	color: #f5f5b8;
+	background: #718600;
+  padding: 2.2em 0;
+  margin-bottom: 60px;
+	position: relative;
+}
+
+.banner2 {
+	color: #f5f5b8;
+	background: #f5f5b8;
+	text-align: center;
+  padding: 1.2em 1.2em;
+  margin-bottom: 60px;
+	position: relative;
+}
+
+.col {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.main-footer {
+	background: #172713;
+	padding: 2em 0;
+	margin-top: 30px;
+	color: #f2ad78;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 100px;
+	position: absolute;
+	top: -30px;
+	right: 64%;
+	z-index: 20;
+}
+
+.headline {
+  margin-bottom: 0;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (max-width: 769px) {
+
+	body {
+   padding-top: 249px;
+  }
+
+	.headline {
+		display: none;
+	}
+
+	.tagline {
+		font-size: 1em;
+	}
+
+	.logo {
+		width: 140px;
+		position: absolute;
+		top: -110px;
+		right: 64%;
+		z-index: 20;
+	}
+}
+
+@media (min-width: 769px) {
+
+	body {
+   padding-top: 68px;
+  }
+
+	.container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .name,
+  .col {
+    float: left;
+  }
+
+  .primary,
+  .secondary {
+    width: 50%;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  .tagline {
+    font-size: 1.4em;
+  }
+
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1025px) {
+  .container {
+    width: 80%;
+    max-width: 1150px;
+  }
+
+  .primary {
+    width: 40%;
+  }
+
+  .secondary,
+  .tertiary {
+    width: 30%;
+  }
+
+}
+
+button {
+  color: tomato;
+  background: #172713;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, .1);
+  cursor: pointer;
+}
+
+#skyfriHimmelButton {
+  color: #093a58;
+  background: #3C94FF;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, .1);
+  cursor: pointer;
+}
