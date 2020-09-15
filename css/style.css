@@ -138,6 +138,10 @@ img {
 	z-index: 20;
 }
 
+#lemonButton {
+	width: 100px;
+}
+
 .headline {
   margin-bottom: 0;
 }
